@@ -1,0 +1,25 @@
+<h2> Ranks</h2>
+<div class="window">
+    <div class="frame">
+      <table>
+        <thead>
+          <tr>
+            <th (click)="sortByColumn('Rank')" >Rank</th>
+            <th (click)="sortByColumn('Roll')">Roll</th>
+            <th (click)="sortByColumn('Course')">Dept</th>
+            <th (click)="sortByColumn('SemesterPredictions')">Semester Predicted Scores</th>
+            <th (click)="sortByColumn('ProjectPredictions')">Project Predicted Scores</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of semesterData">
+            <td>{{ item.Rank }}</td>
+            <td>{{ item.Roll }}</td>
+            <td>{{ item.Course }}</td>
+            <td>{{ item.SemesterPredictions }}</td>
+            <td>{{ item.ProjectPredictions }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

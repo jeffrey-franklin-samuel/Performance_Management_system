@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="background">
+  </div>
+  <h2>Welcome </h2>
+  
+  <!-- Use *ngIf to conditionally render either the login or registration component -->
+  <div *ngIf="showLogin">
+    <app-login></app-login>
+    <p>Don't have an account? <a (click)="toggleForm()">Register</a></p>
+  </div>
+  
+  <div *ngIf="!showLogin">
+    <app-registration></app-registration>
+    <p>Already have an account? <a (click)="toggleForm()">Login</a></p>
+  </div>
+</div>

@@ -1,0 +1,51 @@
+form {
+    max-width: 600px; /* Adjust max-width to your preference */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+  
+  label {
+    display: block; /* Display labels as block elements */
+    margin-bottom: 5px; /* Add some space between labels */
+  }
+  
+  input,
+  select {
+    width: 100%; /* Make input fields and select elements fill the container */
+    padding: 8px; /* Add padding for better readability */
+    margin-bottom: 10px; /* Add space between input fields */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+  
+  button {
+    display: block; /* Display the button as a block element */
+    width: 100%; /* Make the button fill the container */
+    padding: 10px; /* Add padding for better appearance */
+    margin-top: 10px; /* Add some space above the button */
+  }
+  
+  /* Hide dropdown content by default */
+  .hidden {
+    display: none;
+  }
+
+  /* Add CSS for the down and up arrows */
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .down {
+    transform: rotate(0deg);
+  }
+  
+  .up {
+    transform: rotate(-180deg);
+  }
+  
+  

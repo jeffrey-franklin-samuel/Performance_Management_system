@@ -1,0 +1,59 @@
+.dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.window {
+  margin: 10px;
+}
+
+.frame {
+  border: 1px solid #ccc;
+  overflow: auto;
+  max-height: 400px; /* Set the maximum height of the frames */
+}
+
+.frame table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+.frame thead {
+  position: sticky;
+  top: 0;
+  background-color: #f5f5f5; /* Add a background color for clarity */
+}
+
+.frame th {
+  padding: 8px;
+  text-align: left;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 50px;
+  
+}
+
+.gallery-item img {
+  
+  width: 100%;
+  height: auto;
+}
+.large-image {
+  grid-row: span 3;
+  grid-column: span 3;
+}
+.gallery-item img {
+  transition: transform 0.3s ease;
+  
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1); /* Example: Scale the image by 10% on hover */
+  
+}

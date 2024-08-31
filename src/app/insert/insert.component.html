@@ -1,0 +1,170 @@
+<div class="container">
+    <h2>Insert Student</h2>
+    <form (submit)="insertStudent()">
+        <label>Name<span class="required">*</span></label>
+        <input type="text" [(ngModel)]="studentData.Name" name="Name" required>
+
+        <label>Age<span class="required">*</span></label>
+        <input type="number" [(ngModel)]="studentData.Age" name="Age" required>
+
+        <label>Course<span class="required">*</span></label>
+        <input type="text" [(ngModel)]="studentData.Course" name="Course" required>
+
+        <label>Address<span class="required">*</span></label>
+        <input type="text" [(ngModel)]="studentData.Address" name="Address" required>
+
+        <label>Phone Number<span class="required">*</span></label>
+        <input type="text" [(ngModel)]="studentData.PhoneNumber" name="PhoneNumber" required>
+
+        <label>Father's Name<span class="required">*</span></label>
+        <input type="text" [(ngModel)]="studentData.FatherName" name="FatherName" required>
+
+        <label>Mother's Name<span class="required">*</span></label>
+        <input type="text" [(ngModel)]="studentData.MotherName" name="MotherName" required>
+
+        <label>Income<span class="required">*</span></label>
+        <input type="number" [(ngModel)]="studentData.Income" name="Income" required>
+
+        <label>Semester 1<span class="required">*</span></label>
+        <input type="number" [(ngModel)]="studentData.sem_1" name="sem1" required>
+
+        <label>Semester 2<span class="required">*</span></label>
+        <input type="number" [(ngModel)]="studentData.sem_2" name="sem2" required>
+
+        <label>Semester 3<span class="required">*</span></label>
+        <input type="number" [(ngModel)]="studentData.sem_3" name="sem3" required>
+
+        <label>Semester 4<span class="required">*</span></label>
+        <input type="number" [(ngModel)]="studentData.sem_4" name="sem4" required>
+
+        <label>Project 1<span class="required">*</span></label>
+        <input type="number" [(ngModel)]="studentData.Project1" name="Project1" required>
+
+        <label>Project 2<span class="required">*</span></label>
+        <input type="number" [(ngModel)]="studentData.Project2" name="Project2" required>
+
+        <label>Project 3<span class="required">*</span></label>
+        <input type="number" [(ngModel)]="studentData.Project3" name="Project3" required>
+
+        <label>Project 4<span class="required">*</span></label>
+        <input type="number" [(ngModel)]="studentData.Project4" name="Project4" required>
+
+        <!-- Add fields for Aptitude -->
+        <!-- Add fields for Aptitude -->
+        <label>Aptitude 1</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude1" name="Aptitude1" required>
+
+        <label>Aptitude 2</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude2" name="Aptitude2" required>
+
+        <label>Aptitude 3</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude3" name="Aptitude3" required>
+
+        <label>Aptitude 4</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude4" name="Aptitude4" required>
+
+        <label>Aptitude 5</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude5" name="Aptitude5" required>
+
+        <label>Aptitude 6</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude6" name="Aptitude6" required>
+
+        <label>Aptitude 7</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude7" name="Aptitude7" required>
+
+        <label>Aptitude 8</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude8" name="Aptitude8" required>
+
+        <label>Aptitude 9</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude9" name="Aptitude9" required>
+
+        <label>Aptitude 10</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude10" name="Aptitude10" required>
+
+        <label>Aptitude 11</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude11" name="Aptitude11" required>
+
+        <label>Aptitude 12</label>
+        <input type="number" [(ngModel)]="studentData.Aptitude12" name="Aptitude12" required>
+
+
+        <!-- Add fields for Communication -->
+        <!-- Add fields for Communication -->
+        <label>Communication 1</label>
+        <input type="number" [(ngModel)]="studentData.Communication1" name="Communication1" required>
+
+        <label>Communication 2</label>
+        <input type="number" [(ngModel)]="studentData.Communication2" name="Communication2" required>
+
+        <label>Communication 3</label>
+        <input type="number" [(ngModel)]="studentData.Communication3" name="Communication3" required>
+
+        <label>Communication 4</label>
+        <input type="number" [(ngModel)]="studentData.Communication4" name="Communication4" required>
+
+        <label>Communication 5</label>
+        <input type="number" [(ngModel)]="studentData.Communication5" name="Communication5" required>
+
+        <label>Communication 6</label>
+        <input type="number" [(ngModel)]="studentData.Communication6" name="Communication6" required>
+
+        <label>Communication 7</label>
+        <input type="number" [(ngModel)]="studentData.Communication7" name="Communication7" required>
+
+        <label>Communication 8</label>
+        <input type="number" [(ngModel)]="studentData.Communication8" name="Communication8" required>
+
+        <label>Communication 9</label>
+        <input type="number" [(ngModel)]="studentData.Communication9" name="Communication9" required>
+
+        <label>Communication 10</label>
+        <input type="number" [(ngModel)]="studentData.Communication10" name="Communication10" required>
+
+        <label>Communication 11</label>
+        <input type="number" [(ngModel)]="studentData.Communication11" name="Communication11" required>
+
+        <label>Communication 12</label>
+        <input type="number" [(ngModel)]="studentData.Communication12" name="Communication12" required>
+
+        <!-- Add fields for Logical Test -->
+        <!-- Add fields for Logical Test -->
+        <label>Logical Test 1</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest1" name="LogicalTest1" required>
+
+        <label>Logical Test 2</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest2" name="LogicalTest2" required>
+
+        <label>Logical Test 3</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest3" name="LogicalTest3" required>
+
+        <label>Logical Test 4</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest4" name="LogicalTest4" required>
+
+        <label>Logical Test 5</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest5" name="LogicalTest5" required>
+
+        <label>Logical Test 6</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest6" name="LogicalTest6" required>
+
+        <label>Logical Test 7</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest7" name="LogicalTest7" required>
+
+        <label>Logical Test 8</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest8" name="LogicalTest8" required>
+
+        <label>Logical Test 9</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest9" name="LogicalTest9" required>
+
+        <label>Logical Test 10</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest10" name="LogicalTest10" required>
+
+        <label>Logical Test 11</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest11" name="LogicalTest11" required>
+
+        <label>Logical Test 12</label>
+        <input type="number" [(ngModel)]="studentData.LogicalTest12" name="LogicalTest12" required>
+
+        <button type="submit" [disabled]="!isFormValid()">Insert Student</button>
+
+    </form>
+</div>

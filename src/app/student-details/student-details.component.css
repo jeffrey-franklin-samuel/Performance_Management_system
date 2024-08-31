@@ -1,0 +1,89 @@
+.container {
+  margin: auto;
+  padding: 20px;
+}
+
+.widget {
+  background-color: #ffffff; /* Change background color to white */
+  border: 1px solid #ccc; /* Lighten border color */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle box shadow for depth */
+}
+
+.widget h3 {
+  margin-top: 0;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.inputBox {
+  text-align: center;
+}
+
+/* Buttons */
+.mat-button {
+  background-color: #007bff; /* Change button background color to blue */
+  color: #ffffff; /* Set button text color to white */
+  padding: 10px 20px; /* Increase padding for better button appearance */
+  border: none;
+  border-radius: 5px; /* Add border radius for rounded buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+.mat-button:hover {
+  background-color: #0056b3; /* Darken button color on hover */
+}
+
+.mat-icon {
+  margin-right: 5px; /* Add spacing between icon and text */
+}
+
+/* Images */
+.widget img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add border radius for rounded images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle box shadow for depth */
+  margin-bottom: 10px; /* Add spacing below images */
+}
+
+/* Strong Text */
+.widget strong {
+  color: #007bff; /* Change strong text color to blue */
+}
+
+/* Lists */
+.widget ul {
+  padding-left: 20px; /* Add indentation for better list appearance */
+}
+
+/* Links */
+.widget a {
+  color: #007bff; /* Change link color to blue */
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+.widget a:hover {
+  color: #0056b3; /* Darken link color on hover */
+}
+/* Images */
+.widget img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Add border radius for rounded images */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle box shadow for depth */
+  margin-bottom: 10px; /* Add spacing below images */
+  transition: transform 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+.widget img:hover {
+  transform: scale(1.05); /* Scale image by 5% on hover */
+}

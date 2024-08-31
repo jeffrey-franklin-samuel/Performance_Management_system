@@ -1,0 +1,187 @@
+<!-- insert.component.html -->
+<div class="container">
+    <h1>Enter Record</h1>
+
+    <form (ngSubmit)="onSubmit()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" [(ngModel)]="formData.Name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" [(ngModel)]="formData.Age" required>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" [(ngModel)]="formData.Course" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" [(ngModel)]="formData.Address">
+
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="formData.PhoneNumber">
+
+        <label for="fatherName">Father's Name:</label>
+        <input type="text" id="fatherName" name="fatherName" [(ngModel)]="formData.FatherName">
+
+        <label for="motherName">Mother's Name:</label>
+        <input type="text" id="motherName" name="motherName" [(ngModel)]="formData.MotherName">
+
+        <label for="income">Income:</label>
+        <input type="number" id="income" name="income" [(ngModel)]="formData.Income">
+
+        <label for="sem1">Semester 1:</label>
+        <input type="number" id="sem1" name="sem1" [(ngModel)]="formData.sem_1">
+
+        <label for="sem2">Semester 2:</label>
+        <input type="number" id="sem2" name="sem2" [(ngModel)]="formData.sem_2">
+
+        <label for="sem3">Semester 3:</label>
+        <input type="number" id="sem3" name="sem3" [(ngModel)]="formData.sem_3">
+
+        <label for="sem4">Semester 4:</label>
+        <input type="number" id="sem4" name="sem4" [(ngModel)]="formData.sem_4">
+
+        <label for="project1">Project 1:</label>
+        <input type="number" id="project1" name="project1" [(ngModel)]="formData.Project1">
+
+        <label for="project1Status">Project 1 Status:</label>
+        <input type="radio" id="project1OnTime" name="project1Status" [(ngModel)]="formData.Project1_Status"
+            value="On Time" required>On Time
+        <input type="radio" id="project1Late" name="project1Status" [(ngModel)]="formData.Project1_Status" value="Late"
+            required>Late
+
+        <label for="project2">Project 2:</label>
+        <input type="number" id="project2" name="project2" [(ngModel)]="formData.Project2">
+
+        <label for="project2Status">Project 2 Status:</label>
+        <input type="radio" id="project2OnTime" name="project2Status" [(ngModel)]="formData.Project2_Status"
+            value="On Time" required>On Time
+        <input type="radio" id="project2Late" name="project2Status" [(ngModel)]="formData.Project2_Status" value="Late"
+            required>Late
+
+        <label for="project3">Project 3:</label>
+        <input type="number" id="project3" name="project3" [(ngModel)]="formData.Project3">
+
+        <label for="project3Status">Project 3 Status:</label>
+        <input type="radio" id="project3OnTime" name="project3Status" [(ngModel)]="formData.Project3_Status"
+            value="On Time" required>On Time
+        <input type="radio" id="project3Late" name="project3Status" [(ngModel)]="formData.Project3_Status" value="Late"
+            required>Late
+
+        <label for="project4">Project 4:</label>
+        <input type="number" id="project4" name="project4" [(ngModel)]="formData.Project4">
+
+        <label for="project4Status">Project 4 Status:</label>
+        <input type="radio" id="project4OnTime" name="project4Status" [(ngModel)]="formData.Project4_Status"
+            value="On Time" required>On Time
+        <input type="radio" id="project4Late" name="project4Status" [(ngModel)]="formData.Project4_Status" value="Late"
+            required>Late
+        <label for="aptitude1">Aptitude 1:</label>
+        <input type="text" id="aptitude1" name="aptitude1" [(ngModel)]="formData.Aptitude1">
+
+        <label for="aptitude2">Aptitude 2:</label>
+        <input type="text" id="aptitude2" name="aptitude2" [(ngModel)]="formData.Aptitude2">
+
+        <label for="aptitude3">Aptitude 3:</label>
+        <input type="text" id="aptitude3" name="aptitude3" [(ngModel)]="formData.Aptitude3">
+
+        <label for="aptitude4">Aptitude 4:</label>
+        <input type="text" id="aptitude4" name="aptitude4" [(ngModel)]="formData.Aptitude4">
+
+        <label for="aptitude5">Aptitude 5:</label>
+        <input type="text" id="aptitude5" name="aptitude5" [(ngModel)]="formData.Aptitude5">
+
+        <label for="aptitude6">Aptitude 6:</label>
+        <input type="text" id="aptitude6" name="aptitude6" [(ngModel)]="formData.Aptitude6">
+
+        <label for="aptitude7">Aptitude 7:</label>
+        <input type="text" id="aptitude7" name="aptitude7" [(ngModel)]="formData.Aptitude7">
+
+        <label for="aptitude8">Aptitude 8:</label>
+        <input type="text" id="aptitude8" name="aptitude8" [(ngModel)]="formData.Aptitude8">
+
+        <label for="aptitude9">Aptitude 9:</label>
+        <input type="text" id="aptitude9" name="aptitude9" [(ngModel)]="formData.Aptitude9">
+
+        <label for="aptitude10">Aptitude 10:</label>
+        <input type="text" id="aptitude10" name="aptitude10" [(ngModel)]="formData.Aptitude10">
+
+        <label for="aptitude11">Aptitude 11:</label>
+        <input type="text" id="aptitude11" name="aptitude11" [(ngModel)]="formData.Aptitude11">
+
+        <label for="aptitude12">Aptitude 12:</label>
+        <input type="text" id="aptitude12" name="aptitude12" [(ngModel)]="formData.Aptitude12">
+
+        <label for="communication1">Communication 1:</label>
+        <input type="text" id="communication1" name="communication1" [(ngModel)]="formData.Communication1">
+
+        <label for="communication2">Communication 2:</label>
+        <input type="text" id="communication2" name="communication2" [(ngModel)]="formData.Communication2">
+
+        <label for="communication3">Communication 3:</label>
+        <input type="text" id="communication3" name="communication3" [(ngModel)]="formData.Communication3">
+
+        <label for="communication4">Communication 4:</label>
+        <input type="text" id="communication4" name="communication4" [(ngModel)]="formData.Communication4">
+
+        <label for="communication5">Communication 5:</label>
+        <input type="text" id="communication5" name="communication5" [(ngModel)]="formData.Communication5">
+
+        <label for="communication6">Communication 6:</label>
+        <input type="text" id="communication6" name="communication6" [(ngModel)]="formData.Communication6">
+
+        <label for="communication7">Communication 7:</label>
+        <input type="text" id="communication7" name="communication7" [(ngModel)]="formData.Communication7">
+
+        <label for="communication8">Communication 8:</label>
+        <input type="text" id="communication8" name="communication8" [(ngModel)]="formData.Communication8">
+
+        <label for="communication9">Communication 9:</label>
+        <input type="text" id="communication9" name="communication9" [(ngModel)]="formData.Communication9">
+
+        <label for="communication10">Communication 10:</label>
+        <input type="text" id="communication10" name="communication10" [(ngModel)]="formData.Communication10">
+
+        <label for="communication11">Communication 11:</label>
+        <input type="text" id="communication11" name="communication11" [(ngModel)]="formData.Communication11">
+
+        <label for="communication12">Communication 12:</label>
+        <input type="text" id="communication12" name="communication12" [(ngModel)]="formData.Communication12">
+
+        <label for="logicalTest1">Logical Test 1:</label>
+        <input type="text" id="logicalTest1" name="logicalTest1" [(ngModel)]="formData.LogicalTest1">
+
+        <label for="logicalTest2">Logical Test 2:</label>
+        <input type="text" id="logicalTest2" name="logicalTest2" [(ngModel)]="formData.LogicalTest2">
+
+        <label for="logicalTest3">Logical Test 3:</label>
+        <input type="text" id="logicalTest3" name="logicalTest3" [(ngModel)]="formData.LogicalTest3">
+
+        <label for="logicalTest4">Logical Test 4:</label>
+        <input type="text" id="logicalTest4" name="logicalTest4" [(ngModel)]="formData.LogicalTest4">
+
+        <label for="logicalTest5">Logical Test 5:</label>
+        <input type="text" id="logicalTest5" name="logicalTest5" [(ngModel)]="formData.LogicalTest5">
+
+        <label for="logicalTest6">Logical Test 6:</label>
+        <input type="text" id="logicalTest6" name="logicalTest6" [(ngModel)]="formData.LogicalTest6">
+
+        <label for="logicalTest7">Logical Test 7:</label>
+        <input type="text" id="logicalTest7" name="logicalTest7" [(ngModel)]="formData.LogicalTest7">
+
+        <label for="logicalTest8">Logical Test 8:</label>
+        <input type="text" id="logicalTest8" name="logicalTest8" [(ngModel)]="formData.LogicalTest8">
+
+        <label for="logicalTest9">Logical Test 9:</label>
+        <input type="text" id="logicalTest9" name="logicalTest9" [(ngModel)]="formData.LogicalTest9">
+
+        <label for="logicalTest10">Logical Test 10:</label>
+        <input type="text" id="logicalTest10" name="logicalTest10" [(ngModel)]="formData.LogicalTest10">
+
+        <label for="logicalTest11">Logical Test 11:</label>
+        <input type="text" id="logicalTest11" name="logicalTest11" [(ngModel)]="formData.LogicalTest11">
+
+        <label for="logicalTest12">Logical Test 12:</label>
+        <input type="text" id="logicalTest12" name="logicalTest12" [(ngModel)]="formData.LogicalTest12">
+
+        <button type="submit" [disabled]="!isFormValid()">Submit</button>
+    </form>
+</div>

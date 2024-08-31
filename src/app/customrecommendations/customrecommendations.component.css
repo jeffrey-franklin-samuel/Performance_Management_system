@@ -1,0 +1,44 @@
+/* Style for the recommendation list */
+ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the delete button */
+  button {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #c82333; /* Darker red color on hover */
+  }
+  
+  /* Style for the add recommendation input and button */
+  input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin-right: 10px;
+  }
+  
+  /* Style for the delete all button */
+  button.delete-all {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button.delete-all:hover {
+    background-color: #c82333; /* Darker red color on hover */
+  }
+  

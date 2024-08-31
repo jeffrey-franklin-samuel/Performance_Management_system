@@ -1,0 +1,23 @@
+.container {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  form {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    grid-gap: 10px; /* Gap between grid items */
+  }
+  
+  label {
+    grid-column: 1 / 2; /* Labels start from column 1 */
+  }
+  
+  input {
+    grid-column: 2 / -1; /* Inputs span from column 2 to the end */
+    width: 100%; /* Inputs fill the available space */
+  }
+  .required {
+    color: red;
+}

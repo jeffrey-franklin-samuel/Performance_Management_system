@@ -1,0 +1,82 @@
+
+<br>
+<div class="gallery">
+  <div class="gallery-item" *ngFor="let image of imageUrlsWithDimensionsSemester" [ngClass]="{'large-image': image.isLargeImage}">
+    <img [src]="image.url" [style.width]="image.width" [style.height]="image.height" alt="Image" class="hover-zoom" (click)="openImage($event)">
+  </div>
+</div>
+<div class="window">
+    <h2>Semester Data</h2>
+    <div class="frame">
+
+    
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Roll Number</th>
+          <th>Semester 1</th>
+          <th>Semester 2</th>
+          <th>Semester 3</th>
+          <th>Semester 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of semesterData">
+          <td>{{item.Rank}}</td>
+          <td>{{ item.RollNumber }}</td>
+          <td>{{ item.sem1 }}</td>
+          <td>{{ item.sem2 }}</td>
+          <td>{{ item.sem3 }}</td>
+          <td>{{ item.sem4 }}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+</div>
+  
+    
+ 
+<br>
+<div class="gallery">
+  <div class="gallery-item" *ngFor="let image of imageUrlsWithDimensionsProject" [ngClass]="{'large-image': image.isLargeImage}">
+    <img [src]="image.url" [style.width]="image.width" [style.height]="image.height" alt="Image" class="hover-zoom" (click)="openImage($event)">
+  </div>
+</div>
+  <div class="window">
+  <h2>Project Data</h2>
+    <div class="frame">
+        <table>
+            <thead>
+              <tr>
+                
+                <th>Roll Number</th>
+                <th>Project 1</th>
+                <th>Status</th>
+                <th>Project 2</th>
+                <th>Status</th>
+                <th>Project 3</th>
+                <th>Status</th>
+                <th>Project 4</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of projectData">
+                
+                <td>{{ item.RollNumber }}</td>
+                <td>{{ item.Project1 }}</td>
+                <td>{{ item.Project1_Status }}</td>
+                <td>{{ item.Project2 }}</td>
+                <td>{{ item.Project2_Status }}</td>
+                <td>{{ item.Project3 }}</td>
+                <td>{{ item.Project3_Status }}</td>
+                <td>{{ item.Project4 }}</td>
+                <td>{{ item.Project4_Status }}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  </div>
+  

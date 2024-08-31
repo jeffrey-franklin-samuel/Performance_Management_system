@@ -1,0 +1,183 @@
+<div class="container">
+
+  <div class="inputBox">
+    <h2>Data Display</h2>
+    <label for="parameterInput">Enter Parameter:</label>
+    <input type="text" id="parameterInput" [(ngModel)]="parameterValue">
+    <button mat-button (click)="activateEdit(false)" (click)="getData()" (click)="loadImages()">Get Data</button>
+  </div>
+
+  <div *ngIf="data" class="dashboard">
+    <div class="widget">
+      <h1><mat-icon> person_pin_circle</mat-icon>{{ data.Name }}</h1>
+      <h2>
+        <p><mat-icon> list_alt</mat-icon><strong>Roll Number:</strong> {{ data.RollNumber }}</p>
+      </h2>
+    </div>
+    <div class="widget">
+
+      <h1>
+        <p><mat-icon>star</mat-icon><strong>Rank:</strong> {{ data.Rank }}</p>
+      </h1>
+      <h1>
+        <p><mat-icon>school</mat-icon> {{ data.Rank |romanNumeral}}</p>
+      </h1>
+      
+    </div>
+    <div class="widget">
+
+      <h3>
+        <p><mat-icon> import_contacts</mat-icon><strong>Course:</strong> {{ data.Course }}</p>
+      </h3>
+      <p style="color: red;"><mat-icon>perm_identity</mat-icon><strong>ID:</strong> {{ data.ID }}</p>
+    </div>
+    
+
+
+  </div>
+  <div *ngIf="data" class="dashboard">
+    <div class="widget">
+
+
+      <p><strong>Age:</strong> {{ data.Age }}</p>
+      <p><strong>Address:</strong> {{ data.Address }}</p>
+      <p><strong>Father Name:</strong> {{ data.FatherName }}</p>
+      <p><strong>Mother Name:</strong> {{ data.MotherName }}</p>
+      <p><strong>Phone Number:</strong> {{ data.PhoneNumber }}</p>
+      <p><strong>Income:</strong> {{ data.Income }}</p>
+    </div>
+  </div>
+  <div *ngIf="data" class="dashboard">
+    <div class="widget">
+      <img src="{{image1Url}}" style="width: auto;height: 400px;" (click)="openImage($event)">
+    </div>
+    <div class="widget">
+      <p><strong>Semester GPAs:</strong> {{ data['Semester Predicted GPA'] }}</p>
+      <ul>
+        <li>Semester 1: {{ data['sem 1'] }}</li>
+        <li>Semester 2: {{ data['sem 2'] }}</li>
+        <li>Semester 3: {{ data['sem 3'] }}</li>
+        <li>Semester 4: {{ data['sem 4'] }}</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <img [src]="image2Url" style="width: auto;height: 300px;" (click)="openImage($event)">
+      <img [src]="image3Url" style="width: auto;height: 300px;" (click)="openImage($event)">
+    </div>
+  
+    <div class="widget">
+      <img src="{{image8Url}}" style="width: auto;height: 100px;" (click)="openImage($event)">
+      <img src="{{image9Url}}" style="width: auto;height: 100px;" (click)="openImage($event)">
+      <img src="{{image10Url}}" style="width: auto;height: 100px;" (click)="openImage($event)">
+      <img src="{{image11Url}}" style="width: auto;height: 100px;" (click)="openImage($event)">
+      <img src="{{image12Url}}" style="width: auto;height: 100px;" (click)="openImage($event)">
+    </div>
+    
+  </div>
+  <div *ngIf="data" class="dashboard">
+    <br>
+    <div class="widget">
+      <img [src]="image4Url" style="width: auto;height: 400px;" (click)="openImage($event)">
+    </div>
+    <div class="widget">
+      <p><strong>Project Predicted GPA:</strong> {{ data['Project Predicted GPA'] }}</p>
+      <p><strong>Project Statuses:</strong></p>
+      <ul>
+        <li>Project 1: {{ data.Project1 }} ({{ data.Project1_Status }})</li>
+        <li>Project 2: {{ data.Project2 }} ({{ data.Project2_Status }})</li>
+        <li>Project 3: {{ data.Project3 }} ({{ data.Project3_Status }})</li>
+        <li>Project 4: {{ data.Project4 }} ({{ data.Project4_Status }})</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <img [src]="image5Url" style="width: auto;height: 300px;" (click)="openImage($event)">
+      <img [src]="image6Url" style="width: auto;height: 300px;" (click)="openImage($event)">
+    </div>
+    
+    <div class="widget">
+      <img src="{{image13Url}}" style="width: auto;height: 100px;" (click)="openImage($event)">
+      <img src="{{image14Url}}" style="width: auto;height: 100px;" (click)="openImage($event)">
+      <img src="{{image15Url}}" style="width: auto;height: 100px;" (click)="openImage($event)">
+      <img src="{{image16Url}}" style="width: auto;height: 100px;" (click)="openImage($event)">
+      <img src="{{image17Url}}" style="width: auto;height: 100px;" (click)="openImage($event)">
+    </div>
+    
+    
+  </div>
+  <br>
+  <div *ngIf="data" class="dashboard">
+    <div class="widget">
+      <p><strong>Communication Scores:</strong></p>
+      <ul>
+        <li>Communication 1: {{ data.Communication1 }}</li>
+        <li>Communication 2: {{ data.Communication2 }}</li>
+        <li>Communication 3: {{ data.Communication3 }}</li>
+        <li>Communication 4: {{ data.Communication4 }}</li>
+        <li>Communication 5: {{ data.Communication5 }}</li>
+        <li>Communication 6: {{ data.Communication6 }}</li>
+        <li>Communication 7: {{ data.Communication7 }}</li>
+        <li>Communication 8: {{ data.Communication8 }}</li>
+        <li>Communication 9: {{ data.Communication9 }}</li>
+        <li>Communication 10: {{ data.Communication10 }}</li>
+        <li>Communication 11: {{ data.Communication11 }}</li>
+        <li>Communication 12: {{ data.Communication12 }}</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <p><strong>Logical Test Scores:</strong></p>
+      <ul>
+        <li>Logical Test 1: {{ data.LogicalTest1 }}</li>
+        <li>Logical Test 2: {{ data.LogicalTest2 }}</li>
+        <li>Logical Test 3: {{ data.LogicalTest3 }}</li>
+        <li>Logical Test 4: {{ data.LogicalTest4 }}</li>
+        <li>Logical Test 5: {{ data.LogicalTest5 }}</li>
+        <li>Logical Test 6: {{ data.LogicalTest6 }}</li>
+        <li>Logical Test 7: {{ data.LogicalTest7 }}</li>
+        <li>Logical Test 8: {{ data.LogicalTest8 }}</li>
+        <li>Logical Test 9: {{ data.LogicalTest9 }}</li>
+        <li>Logical Test 10: {{ data.LogicalTest10 }}</li>
+        <li>Logical Test 11: {{ data.LogicalTest11 }}</li>
+        <li>Logical Test 12: {{ data.LogicalTest12 }}</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <p><strong>Aptitude Scores:</strong></p>
+      <ul>
+        <li>Aptitude 1: {{ data.Aptitude1 }}</li>
+        <li>Aptitude 2: {{ data.Aptitude2 }}</li>
+        <li>Aptitude 3: {{ data.Aptitude3 }}</li>
+        <li>Aptitude 4: {{ data.Aptitude4 }}</li>
+        <li>Aptitude 5: {{ data.Aptitude5 }}</li>
+        <li>Aptitude 6: {{ data.Aptitude6 }}</li>
+        <li>Aptitude 7: {{ data.Aptitude7 }}</li>
+        <li>Aptitude 8: {{ data.Aptitude8 }}</li>
+        <li>Aptitude 9: {{ data.Aptitude9 }}</li>
+        <li>Aptitude 10: {{ data.Aptitude10 }}</li>
+        <li>Aptitude 11: {{ data.Aptitude11 }}</li>
+        <li>Aptitude 12: {{ data.Aptitude12 }}</li>
+      </ul>
+    </div>
+    <div class="widget">
+      <img [src]="image7Url" style="width: auto;height: 300px;" (click)="openImage($event)">
+    </div>
+    <div class="widget">
+      <img src="{{image18Url}}" style="width: auto;height: 200px;" (click)="openImage($event)">
+      <img src="{{image19Url}}" style="width: auto;height: 200px;" (click)="openImage($event)">
+      <img src="{{image20Url}}" style="width: auto;height: 200px;" (click)="openImage($event)">
+    </div>
+    
+  
+
+  </div>
+  <div *ngIf="data" style="text-align: center;" class="dashboard">
+  <div class="widget">
+    <button *ngIf="this.authService.getRole() === 'admin'" mat-button (click)="activateEdit(true)" (click)="edit.getData()">Edit</button>
+    <app-edit *ngIf="editcomponentflag"  rollNumber="{{data.RollNumber}}" ></app-edit>
+    
+    <button *ngIf="this.authService.getRole() === 'admin'"  mat-button  (click)="delete(data.RollNumber)">Delete</button>
+    <app-customrecommendations  rollNumber="{{data.RollNumber}}"></app-customrecommendations>
+    <app-recommendations semesterMarks="{{data['Semester Predicted GPA']}}" projectMarks="{{data['Project Predicted GPA']}}" aptitudeMarks="{{data.Aptitude12}}" logicalMarks="{{data.LogicalTest12}}" communicationMarks="{{data.Communication12}}"   ></app-recommendations>
+ 
+  </div> 
+  </div>
+</div>

@@ -1,0 +1,230 @@
+<form (ngSubmit)="onSubmit()">
+
+  <h1>EDIT</h1>
+  <div>
+    <div (click)="togglePersonalDetails()">
+      <label for="toggleCommunicationTests">Personal Details</label>
+      <span class="arrow" [class.up]="showCommunicationTests" [class.down]="!showCommunicationTests"></span>
+    </div>
+    <div *ngIf="showPersonalDetails">
+  
+  
+  <label for="Name">Name:</label>
+  <input type="text" id="Name" name="Name" [(ngModel)]="formData.Name" placeholder="{{formData.Name}}">
+
+  <label for="Age">Age:</label>
+  <input type="number" id="Age" name="Age" [(ngModel)]="formData.Age">
+
+  <label for="Course">Course:</label>
+  <input type="text" id="Course" name="Course" [(ngModel)]="formData.Course">
+
+  <label for="Address">Address:</label>
+  <input type="text" id="Address" name="Address" [(ngModel)]="formData.Address">
+
+  <label for="PhoneNumber">Phone Number:</label>
+  <input type="text" id="PhoneNumber" name="PhoneNumber" [(ngModel)]="formData.PhoneNumber">
+
+  <label for="FatherName">Father's Name:</label>
+  <input type="text" id="FatherName" name="FatherName" [(ngModel)]="formData.FatherName">
+
+  <label for="MotherName">Mother's Name:</label>
+  <input type="text" id="MotherName" name="MotherName" [(ngModel)]="formData.MotherName">
+
+  <label for="Income">Income:</label>
+  <input type="number" id="Income" name="Income" [(ngModel)]="formData.Income">
+    </div>
+  </div>
+    <div>
+      <div (click)="toggleSemesters()">
+        <label for="toggleSemesters">Semester Scores</label>
+        <span class="arrow" [class.up]="showSemesters" [class.down]="!showSemesters"></span>
+      </div>
+      <div *ngIf="showSemesters">
+        <label for="sem1">Semester 1:</label>
+        <input type="number" id="sem1" name="sem1" [(ngModel)]="formData['sem 1']">
+  
+        <label for="sem2">Semester 2:</label>
+        <input type="number" id="sem2" name="sem2" [(ngModel)]="formData['sem 2']">
+  
+        <label for="sem3">Semester 3:</label>
+        <input type="number" id="sem3" name="sem3" [(ngModel)]="formData['sem 3']">
+  
+        <label for="sem4">Semester 4:</label>
+        <input type="number" id="sem4" name="sem4" [(ngModel)]="formData['sem 4']">
+      </div>
+    </div>
+    
+ 
+
+    <div>
+      <div (click)="toggleProjects()">
+        <label for="toggleProjects">Project Scores</label>
+        <span class="arrow" [class.up]="showProjects" [class.down]="!showProjects"></span>
+      </div>
+      <div *ngIf="showProjects">
+        <label for="Project1">Project 1 Score:</label>
+        <input type="number" id="Project1" name="Project1" [(ngModel)]="formData.Project1">
+        <label for="Project1_Status">Project 1 Status:</label>
+        <input type="text" id="Project1_Status" name="Project1_Status" [(ngModel)]="formData.Project1_Status">
+  
+        <label for="Project2">Project 2 Score:</label>
+        <input type="number" id="Project2" name="Project2" [(ngModel)]="formData.Project2">
+        <label for="Project2_Status">Project 2 Status:</label>
+        <input type="text" id="Project2_Status" name="Project2_Status" [(ngModel)]="formData.Project2_Status">
+  
+        <label for="Project3">Project 3 Score:</label>
+        <input type="number" id="Project3" name="Project3" [(ngModel)]="formData.Project3">
+        <label for="Project3_Status">Project 3 Status:</label>
+        <input type="text" id="Project3_Status" name="Project3_Status" [(ngModel)]="formData.Project3_Status">
+  
+        <label for="Project4">Project 4 Score:</label>
+        <input type="number" id="Project4" name="Project4" [(ngModel)]="formData.Project4">
+        <label for="Project4_Status">Project 4 Status:</label>
+        <input type="text" id="Project4_Status" name="Project4_Status" [(ngModel)]="formData.Project4_Status">
+      </div>
+    </div>
+    <div>
+      <div (click)="toggleAptitudeTests()">
+        <label for="toggleAptitudeTests">Aptitude Tests</label>
+        <span class="arrow" [class.up]="showAptitudeTests" [class.down]="!showAptitudeTests"></span>
+      </div>
+      <div *ngIf="showAptitudeTests">
+        
+<!-- Aptitude Tests -->
+<label for="Aptitude1">Aptitude Test 1:</label>
+<input type="text" id="Aptitude1" name="Aptitude1" [(ngModel)]="formData.Aptitude1">
+
+<label for="Aptitude2">Aptitude Test 2:</label>
+<input type="text" id="Aptitude2" name="Aptitude2" [(ngModel)]="formData.Aptitude2">
+
+<label for="Aptitude3">Aptitude Test 3:</label>
+<input type="text" id="Aptitude3" name="Aptitude3" [(ngModel)]="formData.Aptitude3">
+
+<label for="Aptitude4">Aptitude Test 4:</label>
+<input type="text" id="Aptitude4" name="Aptitude4" [(ngModel)]="formData.Aptitude4">
+
+<label for="Aptitude5">Aptitude Test 5:</label>
+<input type="text" id="Aptitude5" name="Aptitude5" [(ngModel)]="formData.Aptitude5">
+
+<label for="Aptitude6">Aptitude Test 6:</label>
+<input type="text" id="Aptitude6" name="Aptitude6" [(ngModel)]="formData.Aptitude6">
+
+<label for="Aptitude7">Aptitude Test 7:</label>
+<input type="text" id="Aptitude7" name="Aptitude7" [(ngModel)]="formData.Aptitude7">
+
+<label for="Aptitude8">Aptitude Test 8:</label>
+<input type="text" id="Aptitude8" name="Aptitude8" [(ngModel)]="formData.Aptitude8">
+
+<label for="Aptitude9">Aptitude Test 9:</label>
+<input type="text" id="Aptitude9" name="Aptitude9" [(ngModel)]="formData.Aptitude9">
+
+<label for="Aptitude10">Aptitude Test 10:</label>
+<input type="text" id="Aptitude10" name="Aptitude10" [(ngModel)]="formData.Aptitude10">
+
+<label for="Aptitude11">Aptitude Test 11:</label>
+<input type="text" id="Aptitude11" name="Aptitude11" [(ngModel)]="formData.Aptitude11">
+
+<label for="Aptitude12">Aptitude Test 12:</label>
+<input type="text" id="Aptitude12" name="Aptitude12" [(ngModel)]="formData.Aptitude12">
+
+      </div>
+    </div>
+
+
+
+
+    <div>
+      <div (click)="toggleLogicalTests()">
+        <label for="toggleLogicalTests">Logical Tests</label>
+        <span class="arrow" [class.up]="showLogicalTests" [class.down]="!showLogicalTests"></span>
+      </div>
+      <div *ngIf="showLogicalTests">
+        <label for="LogicalTest1">Logical Test 1:</label>
+        <input type="text" id="LogicalTest1" name="LogicalTest1" [(ngModel)]="formData.LogicalTest1">
+  
+        <label for="LogicalTest2">Logical Test 2:</label>
+        <input type="text" id="LogicalTest2" name="LogicalTest2" [(ngModel)]="formData.LogicalTest2">
+  
+        <label for="LogicalTest3">Logical Test 3:</label>
+        <input type="text" id="LogicalTest3" name="LogicalTest3" [(ngModel)]="formData.LogicalTest3">
+  
+        <label for="LogicalTest4">Logical Test 4:</label>
+        <input type="text" id="LogicalTest4" name="LogicalTest4" [(ngModel)]="formData.LogicalTest4">
+  
+        <label for="LogicalTest5">Logical Test 5:</label>
+        <input type="text" id="LogicalTest5" name="LogicalTest5" [(ngModel)]="formData.LogicalTest5">
+  
+        <label for="LogicalTest6">Logical Test 6:</label>
+        <input type="text" id="LogicalTest6" name="LogicalTest6" [(ngModel)]="formData.LogicalTest6">
+  
+        <label for="LogicalTest7">Logical Test 7:</label>
+        <input type="text" id="LogicalTest7" name="LogicalTest7" [(ngModel)]="formData.LogicalTest7">
+  
+        <label for="LogicalTest8">Logical Test 8:</label>
+        <input type="text" id="LogicalTest8" name="LogicalTest8" [(ngModel)]="formData.LogicalTest8">
+  
+        <label for="LogicalTest9">Logical Test 9:</label>
+        <input type="text" id="LogicalTest9" name="LogicalTest9" [(ngModel)]="formData.LogicalTest9">
+  
+        <label for="LogicalTest10">Logical Test 10:</label>
+        <input type="text" id="LogicalTest10" name="LogicalTest10" [(ngModel)]="formData.LogicalTest10">
+  
+        <label for="LogicalTest11">Logical Test 11:</label>
+        <input type="text" id="LogicalTest11" name="LogicalTest11" [(ngModel)]="formData.LogicalTest11">
+  
+        <label for="LogicalTest12">Logical Test 12:</label>
+        <input type="text" id="LogicalTest12" name="LogicalTest12" [(ngModel)]="formData.LogicalTest12">
+      </div>
+    </div>
+    
+
+
+
+<!-- Communication Tests -->
+<div>
+  <div (click)="toggleCommunicationTests()">
+    <label for="toggleCommunicationTests">Communication Tests</label>
+    <span class="arrow" [class.up]="showCommunicationTests" [class.down]="!showCommunicationTests"></span>
+  </div>
+  <div *ngIf="showCommunicationTests">
+    <label for="Communication1">Communication Test 1:</label>
+    <input type="text" id="Communication1" name="Communication1" [(ngModel)]="formData.Communication1">
+
+    <label for="Communication2">Communication Test 2:</label>
+    <input type="text" id="Communication2" name="Communication2" [(ngModel)]="formData.Communication2">
+
+    <label for="Communication3">Communication Test 3:</label>
+    <input type="text" id="Communication3" name="Communication3" [(ngModel)]="formData.Communication3">
+
+    <label for="Communication4">Communication Test 4:</label>
+    <input type="text" id="Communication4" name="Communication4" [(ngModel)]="formData.Communication4">
+
+    <label for="Communication5">Communication Test 5:</label>
+    <input type="text" id="Communication5" name="Communication5" [(ngModel)]="formData.Communication5">
+
+    <label for="Communication6">Communication Test 6:</label>
+    <input type="text" id="Communication6" name="Communication6" [(ngModel)]="formData.Communication6">
+
+    <label for="Communication7">Communication Test 7:</label>
+    <input type="text" id="Communication7" name="Communication7" [(ngModel)]="formData.Communication7">
+
+    <label for="Communication8">Communication Test 8:</label>
+    <input type="text" id="Communication8" name="Communication8" [(ngModel)]="formData.Communication8">
+
+    <label for="Communication9">Communication Test 9:</label>
+    <input type="text" id="Communication9" name="Communication9" [(ngModel)]="formData.Communication9">
+
+    <label for="Communication10">Communication Test 10:</label>
+    <input type="text" id="Communication10" name="Communication10" [(ngModel)]="formData.Communication10">
+
+    <label for="Communication11">Communication Test 11:</label>
+    <input type="text" id="Communication11" name="Communication11" [(ngModel)]="formData.Communication11">
+
+    <label for="Communication12">Communication Test 12:</label>
+    <input type="text" id="Communication12" name="Communication12" [(ngModel)]="formData.Communication12">
+  </div>
+</div>
+
+  
+  <button type="submit" (click)="onSubmit"  >Submit</button>
+</form>

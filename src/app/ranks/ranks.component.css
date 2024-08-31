@@ -1,0 +1,76 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+.window {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.frame {
+  border: 1px solid #ccc;
+  overflow-y:auto;
+  overflow-x: hidden;
+  max-height: 79vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 43px; /* Add margin/padding below the table */
+}
+
+
+.frame table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 0; /* Remove default margin */
+  border-collapse: collapse; /* Collapse table borders */
+}
+
+.frame thead {
+  position: sticky;
+  top: 0;
+  background-color: #f5f5f5; /* Add a light gray background color for clarity */
+  z-index: 1; /* Ensure the header stays above the content */
+}
+
+.frame th {
+  padding: 12px;
+  text-align: left;
+  font-weight: bold; /* Make header text bold */
+  color: #333; /* Set header text color */
+  text-transform: uppercase; /* Convert header text to uppercase */
+  cursor: pointer; /* Change cursor to pointer for clickable headers */
+}
+
+.frame th:hover {
+  background-color: #f0f0f0; /* Add a lighter background color on hover for interactive feel */
+}
+
+.frame td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd; /* Add bottom border for table rows */
+}
+
+.frame td:first-child {
+  font-weight: bold; /* Make first column text bold */
+}
+
+h2 {
+  font-size: 2em; /* Adjust font size */
+  color: #000; /* Change text color */
+  text-align: center; /* Center the text horizontally */
+  margin: 20px 0; /* Add some margin to separate the heading from the table */
+}
+h2 {
+  margin-bottom: 30px;
+  animation: flip 5s linear infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
