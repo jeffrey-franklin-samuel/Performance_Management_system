@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Backend Services 
 
-To run the backend services ,run all three python files in 'src/assets' folder.
+To run the backend services ,run all three python files in `src/assets` folder.
